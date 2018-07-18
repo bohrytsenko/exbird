@@ -58,6 +58,13 @@ img
   background-color: $color_yellow
   border: 2px solid $color_yellow
   transition: $transition
+  .textwidget
+    height: 100%
+  &_fixed
+    position: fixed
+    bottom: 0
+    right: 0
+    z-index: 5
   a
     height: 100%
     display: flex
@@ -105,3 +112,29 @@ img
   position: relative
   width: max-content
   margin: 0 auto
+
+// Navigation
+
+.navigation
+  display: flex
+  justify-content: center
+  a
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $color_white
+    font-size: 14px
+    font-weight: 300
+    margin: 0 5px
+    width: 25px
+    height: 25px
+    background-color: $color_yellow
+  span
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 25px
+    height: 25px
+    font-size: 14px
+    font-weight: 700
+    color: $color_black
