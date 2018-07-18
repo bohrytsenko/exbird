@@ -1,0 +1,199 @@
+// Header
+
+.header
+  &__top
+    .container
+      min-height: 83px
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &__info
+    background-size: cover
+    background-position: bottom
+    background-repeat: no-repeat
+    .container
+      min-height: 600px
+      display: flex
+      justify-content: center
+      flex-direction: column
+
+.header_top
+  min-height: 83px
+  &__nav
+    position: relative
+    ul
+      min-height: 83px
+      display: flex
+      padding: 0
+      margin: 0
+      display: flex
+      align-items: center
+      li
+        display: flex
+        align-items: center
+        min-height: 83px
+        margin-right: 15px
+        &:nth-child(4)
+          margin-left: 400px
+        a
+          display: flex
+          align-items: center
+          min-height: 83px
+          color:  $color_black
+          font-size: 14px
+          font-weight: 700
+          line-height: 36px
+          text-transform: uppercase
+          position: relative
+          &:hover
+            transition: $transition
+            &:before
+              width: 100%
+          &:before
+            position: absolute
+            content: ''
+            width: 0
+            height: 4px
+            left: 0
+            top: 0
+            background-color: $color_yellow
+            transition: $transition
+  &__logo
+    position: absolute
+    left: 43%
+    img
+      width: 225px
+  &__btn
+    display: flex
+    a
+      padding: 0 22px
+      display: flex
+      align-items: center
+      justify-content: center
+      min-height: 83px
+      background-color: $color_yellow
+      color: $color_white
+      font-size: 14px
+      font-weight: 700
+      line-height: 36px
+      text-transform: uppercase
+      transition: $transition
+      &:hover
+        transition: $transition
+        color: $color_black
+
+
+.header_info
+  &__text
+    width: 685px
+    max-width: 100%
+    background-color: $color_white
+    padding: 16px 28px
+    .title
+      color: $color_black
+      font-size: 36px
+      font-weight: 300
+      line-height: 36px
+      b
+        font-weight: 400
+
+// Features
+
+.features
+  &__wrapper
+    display: flex
+
+.features_item
+  width: 33.3%
+  display: flex
+  min-height: 41px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 33px
+    height: 100%
+    background-color: $color_yellow
+    color: $color_black
+    font-size: 24px
+    font-weight: 300
+    line-height: 36px
+    text-transform: uppercase
+  &__text
+    background-color: #f5f5f7
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $color_black
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+
+// Mobile
+
+.nav_mobile
+  .active
+    right: 15px
+    position: fixed
+    &:before
+      top: 50%
+      transform: rotate(45deg)
+      transition: $transition
+    &:after
+      top: 50%
+      bottom: inherit
+      transform: rotate(135deg)
+      transition: $transition
+  &__icon
+    z-index: 10
+    cursor: pointer
+    position: relative
+    right: 0
+    width: 30px
+    height: 20px
+    &:before
+      position: absolute
+      content: ''
+      top: 0
+      width: 100%
+      height: 2px
+      background-color: $color_black
+      transition: $transition
+    &:after
+      position: absolute
+      content: ''
+      bottom: 0
+      width: 100%
+      height: 2px
+      background-color: $color_black
+      transition: $transition
+  .show
+    right: -30%
+    transition: $transition
+  .active
+    &:before
+      background-color: $color_white
+    &:after
+      background-color: $color_white
+  ul
+    position: fixed
+    right: -200%
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: $color_black
+    display: flex
+    flex-direction: column
+    padding: 30px
+    transition: $transition
+    z-index: 7
+    li
+      width: 100%
+      margin: 0
+      &:before
+        display: none
+      a
+        font-size: 20px
+        color: $color_white
+

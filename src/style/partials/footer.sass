@@ -1,0 +1,57 @@
+// Footer
+
+.footer
+  padding: 30px 0 140px 0
+  background-color: $color_black
+  &__top
+    display: flex
+    justify-content: space-between
+    padding-bottom: 25px
+    border-bottom: 3px solid $color_white
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 35px
+
+.footer_top
+  &__logo
+    img
+      margin-right: 30px
+  &__nav
+    ul
+      margin: 0
+      padding: 0
+      display: flex
+      justify-content: flex-end
+      li
+        margin-left: 20px
+        a
+          color: $color_white
+          font-size: 14px
+          font-weight: 700
+          line-height: 36px
+          text-transform: uppercase
+          transition: $transition
+          &:hover
+            transition: $transition
+            color: $color_yellow
+
+.footer_bottom
+  &__socials
+    a
+      margin-right: 20px
+      &:hover
+        transition: $transition
+        i
+          color: $color_white
+      i
+        transition: $transition
+        color: $color_yellow
+        font-size: 18px
+  &__copyright
+    p
+      color: $color_white
+      font-size: 12px
+      font-weight: 300
+      line-height: 18px

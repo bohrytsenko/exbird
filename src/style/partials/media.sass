@@ -1,0 +1,158 @@
+$r-768: 768px
+$r-992: 992px
+$r-1024: 1024px
+$r-1200: 1200px
+
+body
+  // break max-992
+  @media only screen and (max-width: $r-768 - 1)
+    .show_desctop
+      display: none
+    .show_mobile
+      display: block
+    .header_info__text .title
+      font-size: 22px
+      line-height: 25px
+    .features_wrap
+      flex-wrap: wrap
+      &__item
+        width: 100%
+    .why_wrap
+      flex-wrap: wrap
+    .why_left,
+    .why_right
+        width: 100% !important
+    .why__btn
+      margin-bottom: 50px
+    .why_slider
+      &__title,
+      &__text,
+      &__info
+        padding: 12px 15px
+    .how_item
+      &__icon
+        &:before,
+        &:after
+          display: none
+    .how__list
+      &:before
+        display: none
+      .container
+        flex-wrap: wrap
+    .how_item
+      width: 100%
+      margin-bottom: 30px
+      &:nth-child(even)
+        .how_item__icon
+          order: 1
+          padding: 0 0 20px 0
+        .how_item__info
+          padding-top: 20px
+          order: 3
+      &__icon
+        padding-bottom: 20px
+      &__info
+        height: inherit
+        padding-top: 20px
+    .reviews
+      background-image: none!important
+      background-color: #69666d
+      &__wrapper
+        flex-wrap: wrap
+      &__list
+        flex-wrap: wrap
+      &_item
+        width: 100% !important
+        margin-bottom: 30px
+    .reviews__title .s_title
+      font-size: 36px!important
+      margin-bottom: 30px
+    .reviews__text
+      flex-wrap: wrap
+      p
+        width: 100%
+        margin-bottom: 30px
+    .termin_wrap
+      flex-wrap: wrap
+      &__item
+        width: 100% !important
+    .footer_top
+      flex-wrap: wrap
+      &__logo
+        display: flex
+        justify-content: space-between
+        width: 100% !important
+        margin-bottom: 20px
+      &__nav
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        ul
+          flex-direction: column
+    .footer_bottom
+      flex-wrap: wrap
+      &__socials
+        width: 100%
+        margin-bottom: 30px
+
+  // break max-992
+  @media only screen and (max-width: $r-992 - 1)
+    .header_top
+      &__logo
+        img
+          width: 100px
+      &__nav
+        ul
+          li
+            a
+              font-size: 12px
+      &__btn
+        a
+          font-size: 10px
+          padding: 0 10px
+    .features_item__text,
+    .why_item__text
+      font-size: 14px
+    .how_item__info
+      .title,
+      p
+        font-size: 12px
+    .reviews__title .s_title
+      font-size: 22px
+    .footer_top
+      &__logo
+        width: 35%
+        img
+          width: 18%
+          margin-right: 10px!important
+      &__nav
+        ul
+          li
+            margin-left: 10px
+            a
+              font-size: 12px
+  // break max-1200
+  @media only screen and (max-width: $r-1200 - 1)
+    .container
+      padding: 0 15px
+    .header_top
+      &__logo
+        position: relative
+        order: 2
+        left: inherit
+      &__nav
+        order: 1
+        ul
+          li:nth-child(4)
+            margin-left: 0
+      &__btn
+        order: 3
+    .why_left
+      width: 50%
+    .reviews_item
+      width: 32%
+    .termin_item
+      width: 48%
+    .footer_top__logo img
+      margin-right: 20px

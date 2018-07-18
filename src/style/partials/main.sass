@@ -1,0 +1,107 @@
+// Colors
+
+$color_black: #38333a
+$color_white: #fff
+$color_yellow: #fbd005
+
+// Animations
+
+$transition: 0.5s
+
+body
+  background-color: #fff
+  font-family: 'Roboto', sans-serif
+
+a
+  text-decoration: none
+  &:hover,
+  &:focus
+    text-decoration: none
+
+p,
+li a
+  margin: 0
+
+li
+  list-style: none
+
+img
+  max-width: 100%
+
+*
+  box-sizing: border-box
+
+.title
+  margin: 0
+
+.show_mobile
+  display: none
+
+.container
+  margin: 0 auto
+  width: 1140px
+  max-width: 100%
+  
+.s_title
+  margin: 0
+  color: $color_black
+  text-align: center
+  font-size: 36px
+  font-weight: 700
+  line-height: 36px
+
+.info
+  padding: 0 16px
+  width: 228px
+  max-width: 100%
+  height: 53px
+  background-color: $color_yellow
+  border: 2px solid $color_yellow
+  transition: $transition
+  a
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $color_white
+    font-size: 14px
+    font-weight: 700
+    line-height: 36px
+    text-transform: uppercase
+    transition: $transition
+    i
+      transition: $transition
+      height: 26px
+  &:hover
+    transition: $transition
+    a
+      color: $color_black
+      i
+        transform: scale(1.2)
+
+// Preloader
+
+.overlay
+  z-index: 101
+  background-color: $color_white
+  background-attachment: fixed
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+
+.overlay-loader
+  text-align: center
+  font-size: 80px
+  text-transform: uppercase
+  color: $color_white
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  width: max-content
+  margin: 0 auto
